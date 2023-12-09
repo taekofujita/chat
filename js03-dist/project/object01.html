@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object演習 - 基本</title>
+</head>
+
+<body>
+<script>
+// シンプルなユーザーオブジェクトの例
+const user = {
+    name: "山田太郎",
+    age: 30,
+    email: "yamada@example.com"
+};
+console.log(user);
+
+// オブジェクトからデータを取り出す
+console.log(user.name);
+
+// オブジェクトからデータを取り出す（別解）
+console.log(user["name"])
+
+const key = "email"
+console.log(user[key]);  //userのkeyプロパティの値を取り出す
+
+
+// オブジェクトに新しいプロパティを追加する
+user.birth = 1;
+console.log(user);
+console.log(user.birth);
+
+
+</script>
+</body>
+
+</html>

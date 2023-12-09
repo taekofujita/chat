@@ -1,0 +1,39 @@
+#chatContainer {
+    width: 300px;
+    margin: auto;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+#messageArea {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 250px;
+    border: 1px solid #ddd;
+    margin: auto;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+#output {
+    z-index: 999;
+    top: 300;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    background: #eee;
+    box-sizing: border-box;
+    padding: 10px 40px;
+}
+
+#messageInput {
+    width: 70%;
+    padding: 5px;
+}
+
+#sendButton {
+    width: 20%;
+    padding: 5px;
+}

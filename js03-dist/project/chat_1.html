@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatアプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="chatContainer">
+        <div id="messageArea"></div>
+        <input type="text" id="messageInput" placeholder="メッセージを入力">
+        <button id="sendButton">送信</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<script>
+    document.getElementById('sendButton').addEventListener('click', function () {
+        var messageInput = document.getElementById('messageInput');
+        var message = messageInput.value;
+        messageInput.value = '';
+
+        var messageArea = document.getElementById('messageArea');
+        var newMessageDiv = document.createElement('div');
+        newMessageDiv.textContent = message;
+        messageArea.appendChild(newMessageDiv);
+    });
+
+</script>
+
+
+</html>
+
+</html>
